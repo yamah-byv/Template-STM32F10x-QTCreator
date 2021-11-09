@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/****************************************************************************
+**
+**
+****************************************************************************/
+-->
+<wizard version="1" kind="project" firstpage="10" id="A.STM32F10x Firmware (Qbs)" category="K.Firmware"
+        platformIndependent="true" featuresRequired="Qbs.QbsSupport">
+    <icon>../common/console.png</icon>
+    <description>Creates a plain C project for STM32F10x using qbs.</description>
+    <displayname>STM32F10x Firmware (Qbs Build)</displayname>;
+    <displaycategory>Firmware Projects</displaycategory>
+    <files>
+	<file source="stm32.qbs" target="%ProjectName%.qbs" openproject="true"/>
+	<file source="qbs/imports/Stm32Library.qbs" openeditor="false"/>
+	<file source="qbs/imports/Stm32Product.qbs" openeditor="false"/>
+	<file source="qbs/imports/Stm32Application.qbs" openeditor="false"/>
+	<file source="src/src.qbs" openeditor="false"/>
+	<file source="openocd.cfg" openeditor="false"/>	
+	<file source="ldscripts/libs.ld" openeditor="false"/>
+	<file source="ldscripts/mem.ld" openeditor="false"/>
+	<file source="ldscripts/sections.ld" openeditor="false"/>
+	<file source="src/libs/libs.qbs" openeditor="false"/>
+	<file source="src/app/main.h" openeditor="false"/>
+	<file source="src/app/main.c" openeditor="false"/>
+	<file source="src/libs/cmsis/core_cm3.h" openeditor="false"/>
+	<file source="src/libs/cmsis/core_cmInstr.h" openeditor="false"/>
+	<file source="src/libs/cmsis/core_cmFunc.h" openeditor="false"/>
+	<file source="src/libs/cmsis_boot/startup/startup_stm32f10x_hd.c" openeditor="false"/>
+	<file source="src/libs/cmsis_boot/system_stm32f10x.h" openeditor="false"/>
+	<file source="src/libs/cmsis_boot/system_stm32f10x.c" openeditor="false"/>
+	<file source="src/libs/cmsis_boot/stm32f10x_conf.h" openeditor="false"/>
+	<file source="src/libs/cmsis_boot/stm32f10x.h" openeditor="false"/>
+	<file source="src/libs/stm_lib/inc/stm32f10x_dma.h" openeditor="false"/>
+	<file source="src/libs/stm_lib/inc/misc.h" openeditor="false"/>
+	<file source="src/libs/stm_lib/inc/stm32f10x_gpio.h" openeditor="false"/>
+	<file source="src/libs/stm_lib/inc/stm32f10x_adc.h" openeditor="false"/>
+	<file source="src/libs/stm_lib/inc/stm32f10x_rcc.h" openeditor="false"/>
+	<file source="src/libs/stm_lib/inc/stm32f10x_tim.h" openeditor="false"/>
+	<file source="src/libs/stm_lib/inc/stm32f10x_spi.h" openeditor="false"/>
+	<file source="src/libs/stm_lib/inc/stm32f10x_dac.h" openeditor="false"/>
+	<file source="src/libs/stm_lib/inc/stm32f10x_usart.h" openeditor="false"/>
+	<file source="src/libs/stm_lib/inc/stm32f10x_sdio.h" openeditor="false"/>
+	<file source="src/libs/stm_lib/src/stm32f10x_tim.c" openeditor="false"/>
+	<file source="src/libs/stm_lib/src/stm32f10x_dac.c" openeditor="false"/>
+	<file source="src/libs/stm_lib/src/stm32f10x_sdio.c" openeditor="false"/>
+	<file source="src/libs/stm_lib/src/stm32f10x_rcc.c" openeditor="false"/>
+	<file source="src/libs/stm_lib/src/stm32f10x_usart.c" openeditor="false"/>
+	<file source="src/libs/stm_lib/src/stm32f10x_spi.c" openeditor="false"/>
+	<file source="src/libs/stm_lib/src/stm32f10x_dma.c" openeditor="false"/>
+	<file source="src/libs/stm_lib/src/stm32f10x_gpio.c" openeditor="false"/>
+	<file source="src/libs/stm_lib/src/stm32f10x_adc.c" openeditor="false"/>
+	<file source="src/libs/stm_lib/src/misc.c" openeditor="false"/>
+    </files>
+</wizard>
